@@ -15,10 +15,11 @@ function Form() {
   }
   return (
     <div>
-      <form onSubmit={handleSubmit}></form>
-      <h3>Plant name</h3>
-      <input type="text" name="plantname" onChange={handleChange} value={plantname} />
-      <input type="submit" />
+      <form onSubmit={handleSubmit}>
+        <h3>Plant name</h3>
+        <input type="text" name="plantname" onChange={handleChange} value={plantname} />
+        <input type="submit" />
+      </form>
     </div>
   );
 }
