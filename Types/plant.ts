@@ -16,14 +16,14 @@ enum Drainage {
   low = 'LOW',
 }
 
-interface Plant {
-  name: string;
-  scientificName: string;
-  watering: Watering;
-  lastWaterered: string;
-  image: string;
-  lighting: LightLevel;
-  maxheight: string;
-  soilType: Drainage;
-  tags: Array<string>;
+export interface Plant {
+  name?: string;
+  scientificName?: string;
+  watering?: Watering;
+  lastWaterered?: string;
+  image?: string;
+  lighting?: LightLevel;
+  maxheight?: string;
+  soilType?: Drainage;
+  tags?: Array<string>;
 }
