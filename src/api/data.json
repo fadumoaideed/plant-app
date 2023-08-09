@@ -1,0 +1,34 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Guava",
+      "scientificName": "Psidium guajava",
+      "watering": "BIWEEKLY",
+      "lastWaterered": "2023-01-10T14:48:00",
+      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "lighting": "DIRECT",
+      "maxheight": "10m",
+      "soilType": "HIGH",
+      "tags": [
+        "tropical",
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lemon",
+      "scientificName": "Citrus limon",
+      "watering": "BIWEEKLY",
+      "lastWaterered": "2023-01-10T14:48:00",
+      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "lighting": "DIRECT",
+      "maxheight": "12m",
+      "soilType": "HIGH",
+      "tags": [
+        "citrus",
+        ""
+      ]
+    }
+  ]
+}

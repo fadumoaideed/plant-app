@@ -1,6 +1,6 @@
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Roboto({ subsets: ['greek'], weight: '400' });
 
 export const metadata = {
   title: 'Plant app',
