@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: 5px;
+}
+
+.img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+.list {
+  display: grid;
+  /* width: 100%; */
+  grid-template-columns: 1fr 1fr;
+}
+
+.headline {
+  font-weight: 800;
+}
+
+.span {
+  color: rgb(0, 169, 128);
+}
+
+.button {
+  border-radius: 50px;
+  background: rgb(0, 169, 128);
+}

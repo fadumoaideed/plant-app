@@ -29,6 +29,36 @@
         "citrus",
         ""
       ]
+    },
+    {
+      "id": 3,
+      "name": "Apple",
+      "scientificName": "Citrus limon",
+      "watering": "BIWEEKLY",
+      "lastWaterered": "2023-01-10T14:48:00",
+      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "lighting": "DIRECT",
+      "maxheight": "12m",
+      "soilType": "HIGH",
+      "tags": [
+        "citrus",
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cactus",
+      "scientificName": "Citrus limon",
+      "watering": "BIWEEKLY",
+      "lastWaterered": "2023-01-10T14:48:00",
+      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "lighting": "DIRECT",
+      "maxheight": "12m",
+      "soilType": "HIGH",
+      "tags": [
+        "citrus",
+        ""
+      ]
     }
   ]
 }

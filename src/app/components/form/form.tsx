@@ -1,5 +1,5 @@
 'use client'; // THis is a client side component
-import styles from './styles.module.css';
+import styles from './form.styles.module.css';
 import React, { useCallback, useState } from 'react';
 import { Plant } from '../../../../Types/plant';
 import { useDropzone } from 'react-dropzone';
