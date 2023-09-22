@@ -1,5 +1,5 @@
 import Form from '../components/form/form';
 
-export default function Add() {
+export default function addPlant() {
   return <Form />;
 }

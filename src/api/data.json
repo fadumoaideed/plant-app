@@ -59,6 +59,14 @@
         "citrus",
         ""
       ]
+    },
+    {
+      "name": "fasfafa",
+      "scientificName": "asfafsa",
+      "image": "helloo",
+      "watering": "weekly",
+      "soilDrainage": "low",
+      "id": 5
     }
   ]
 }

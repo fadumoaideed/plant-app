@@ -17,14 +17,14 @@ export enum Drainage {
 }
 
 export interface Plant {
-  id: number | undefined;
-  name?: string;
-  scientificName?: string;
-  watering?: Watering;
-  lastWaterered?: string;
-  image?: string;
-  sunlight?: LightLevel;
-  maxheight?: string;
-  soilDrainage?: Drainage;
-  tags?: Array<string>;
+  id?: string | undefined;
+  name: string | undefined;
+  scientificName: string | undefined;
+  watering: Watering | undefined;
+  lastWaterered?: string | undefined;
+  image: string;
+  sunlight?: LightLevel | undefined;
+  maxheight?: string | undefined;
+  soilDrainage: Drainage | undefined;
+  tags?: Array<string | undefined>;
 }

@@ -1,6 +1,6 @@
 import styles from './homepage.styles.module.css';
 import { Plant } from '../../Types/plant';
-import Card from './components/Card/card';
+import Card from './components/card/card';
 import Link from 'next/link';
 
 async function getData() {
@@ -25,13 +25,22 @@ export default async function Home() {
       </h1>
       <h3 className={styles.subheadline}>Look after your plants in seconds and get smart, personalized care info.</h3>
       {/* TOD0!: Show form on click  */}
-      <Link className={styles.button} href="/add">
+      <Link className={styles.button} href="/add-plant">
         Add plant
       </Link>
       <h4>My Plants</h4>
       <div className={styles.list}>
         {data.map((plant: Plant) => {
-          return <Card key={plant.id} name={plant.name} id={plant.id} image={plant.image} />;
+          return (
+            <Card
+              key={plant.id}
+              name={plant.name}
+              image={plant.image}
+              scientificName={plant.scientificName}
+              watering={plant.watering}
+              soilDrainage={plant.soilDrainage}
+            />
+          );
         })}
       </div>
     </div>
