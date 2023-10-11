@@ -2,70 +2,83 @@
   "plants": [
     {
       "id": 1,
-      "name": "Guava",
-      "scientificName": "Psidium guajava",
-      "watering": "BIWEEKLY",
+      "name": "String Of Pearls",
+      "scientificName": "Senecio Rowleyanus",
+      "watering": "WEEKLY",
       "lastWaterered": "2023-01-10T14:48:00",
-      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "image": "https://www.houseplant.co.uk/cdn/shop/products/pxl_20220119_125315327_1.jpg?v=1656334970",
       "lighting": "DIRECT",
       "maxheight": "10m",
       "soilType": "HIGH",
       "tags": [
-        "tropical",
-        ""
+        "Senecio Rowleyanus",
+        "String of Pearls",
+        "String of Beads",
+        "Chain of Pearls"
       ]
     },
     {
       "id": 2,
-      "name": "Lemon",
-      "scientificName": "Citrus limon",
+      "name": "Monstera",
+      "scientificName": "Monstera Deliciosa",
       "watering": "BIWEEKLY",
       "lastWaterered": "2023-01-10T14:48:00",
-      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "image": "https://www.houseplant.co.uk/cdn/shop/products/20210108_162756.jpg?v=1686074370",
       "lighting": "DIRECT",
       "maxheight": "12m",
       "soilType": "HIGH",
       "tags": [
-        "citrus",
-        ""
+        "Swiss Cheese Plant",
+        "Cutleaf Philodendron",
+        "Mexican Breadfruit",
+        "Hurricane Plant",
+        "Split-leaf Philodendron",
+        "Delicious Monster"
       ]
     },
     {
       "id": 3,
-      "name": "Apple",
-      "scientificName": "Citrus limon",
+      "name": "Boston Fern",
+      "scientificName": "Nephrolepis Exaltata",
       "watering": "BIWEEKLY",
       "lastWaterered": "2023-01-10T14:48:00",
-      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "image": "https://www.houseplant.co.uk/cdn/shop/products/20200826_100655_1.jpg?v=1656511345",
       "lighting": "DIRECT",
       "maxheight": "12m",
       "soilType": "HIGH",
       "tags": [
-        "citrus",
-        ""
+        "Fern",
+        "Nephrolepis Exaltata",
+        "Boston Fern",
+        "Sword Fern"
       ]
     },
     {
       "id": 4,
-      "name": "Cactus",
-      "scientificName": "Citrus limon",
+      "name": "Areca Palm",
+      "scientificName": "Dypsis Lutescens Chrysalidocarpus",
       "watering": "BIWEEKLY",
       "lastWaterered": "2023-01-10T14:48:00",
-      "image": "https://housing.com/news/wp-content/uploads/2023/01/Guava-tree-feature-compressed.jpg",
+      "image": "https://www.houseplant.co.uk/cdn/shop/products/20210401_095721.jpg?v=1656141699",
       "lighting": "DIRECT",
       "maxheight": "12m",
       "soilType": "HIGH",
       "tags": [
-        "citrus",
+        "Dypsis Lutescens Chrysalidocarpus",
+        "Bamboo Palm",
+        "Areca Palm",
+        "Butterfly Palm",
+        "Yellow Palm",
+        "Golden Cane",
         ""
       ]
     },
     {
-      "name": "fasfafa",
-      "scientificName": "asfafsa",
+      "name": "afeaf",
+      "scientificName": "adfsaf",
       "image": "helloo",
-      "watering": "weekly",
-      "soilDrainage": "low",
+      "watering": "biweekly",
+      "soilDrainage": "high",
       "id": 5
     }
   ]

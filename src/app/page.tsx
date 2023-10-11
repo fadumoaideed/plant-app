@@ -2,12 +2,12 @@ import styles from './homepage.styles.module.css';
 import { Plant } from '../../Types/plant';
 import Card from './components/card/card';
 import Link from 'next/link';
+import Hero from './components/hero/hero';
 
 async function getData() {
   const res = await fetch('http://localhost:3001/plants');
 
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data');
   }
 
@@ -20,14 +20,8 @@ export default async function Home() {
   console.log('data', data);
   return (
     <div>
-      <h1 className={styles.headline}>
-        The<span className={styles.span}> easiest</span> way to keep plants <span className={styles.span}> alive</span>
-      </h1>
-      <h3 className={styles.subheadline}>Look after your plants in seconds and get smart, personalized care info.</h3>
-      {/* TOD0!: Show form on click  */}
-      <Link className={styles.button} href="/add-plant">
-        Add plant
-      </Link>
+      <Hero />
+
       <h4>My Plants</h4>
       <div className={styles.list}>
         {data.map((plant: Plant) => {

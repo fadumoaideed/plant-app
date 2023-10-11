@@ -1,5 +1,9 @@
 import Form from '../components/form/form';
-
+import styles from './page.styles.module.css';
 export default function addPlant() {
-  return <Form />;
+  return (
+    <div className={styles.page}>
+      <Form />
+    </div>
+  );
 }

@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+.headline {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.subheadline {
+  font-size: 20px;
+}
+
+.span {
+  color: rgb(0, 169, 128);
+}
+
+.button {
+  right: 50px;
+  border-radius: 50px;
+  background: rgb(0, 169, 128);
+  padding: 10px 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(6, 112, 85);
+}

@@ -4,10 +4,7 @@ import React, { useState } from 'react';
 import { Plant } from '../../../../Types/plant';
 import axios from 'axios';
 // import { Dropzone } from '../dropzone/dropzone';
-import { useRouter } from 'next/navigation'; // Import useRouter from Next.js for redirection
-import Dropzone from 'react-dropzone';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage } from '@fortawesome/free-solid-svg-icons';
+import { useRouter } from 'next/navigation';
 
 const Form = () => {
   const router = useRouter();
@@ -100,6 +97,14 @@ const Form = () => {
             <option value="weekly">Weekly</option>
             <option value="fortnightly">Fortnightly</option>
           </select>
+          <div className={styles.radio}>
+            <input type="radio" id="x1" name="x" />
+            <label htmlFor="x1">Choice 1</label>
+            <input type="radio" id="x2" name="x" />
+            <label htmlFor="x2">Choice 2</label>
+            <input type="radio" id="x3" name="x" />
+            <label htmlFor="x3">Choice 3</label>
+          </div>
         </div>
         <div className={styles.label}>
           <label htmlFor="soilDrainage">Soil drainage</label>
