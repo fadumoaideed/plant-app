@@ -4,7 +4,6 @@
   border-radius: 25px;
   width: 700px;
   height: 450px;
-  /* z-index: 3; */
 }
 
 .image {
@@ -30,7 +29,6 @@
   padding: 25px;
   width: 50%;
   border-radius: 0px 10px 10px 0px;
-  /* fix spacing */
   justify-content: space-between;
 }
 
@@ -50,6 +48,33 @@
   color: white;
 }
 
-.radio {
+.watering {
+  width: fit-content;
+  border: 1px solid #666;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.watering input {
   display: none;
+}
+
+.watering label {
+  font-family: sans-serif;
+  padding: 10px 10px;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.watering label:last-of-type {
+  border-right: 0;
+}
+.watering label:hover {
+  background: #eee;
+}
+.watering input:checked + label {
+  background: #becbff;
 }

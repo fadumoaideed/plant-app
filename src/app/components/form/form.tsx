@@ -1,5 +1,5 @@
 'use client'; // THis is a client side component
-import styles from './form.styles.module.css';
+import styles from './form1.styles.module.css';
 import React, { useState } from 'react';
 import { Plant } from '../../../../Types/plant';
 import axios from 'axios';
@@ -22,6 +22,7 @@ const Form = () => {
   const [imageError, setImageError] = useState<string>('');
 
   const inputChangeHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    console.log('hi', event.target.value);
     const { name, value } = event.target;
     setResponseBody({ ...responseBody, [name]: value });
   };
@@ -71,6 +72,7 @@ const Form = () => {
         {/* //TODO: get image url */}
         {/* <Dropzone value={formData.image} onChange={(e:any) => inputChangeHandler(e)} /> */}
       </div>
+
       <div className={styles.subForm}>
         <div className={styles.label}>
           <label htmlFor="name">Name</label>
@@ -87,27 +89,35 @@ const Form = () => {
             type="text"
           />
         </div>
-
         <div className={styles.label}>
           <label htmlFor="watering">Water Frequency</label>
-          <select name="watering" id="watering" value={responseBody.watering} onChange={(e) => inputChangeHandler(e)}>
-            <option value="">Choose selection</option>
-            <option value="daily">Daily</option>
-            <option value="biweekly">Bi-Weekly</option>
-            <option value="weekly">Weekly</option>
-            <option value="fortnightly">Fortnightly</option>
-          </select>
-          <div className={styles.radio}>
-            <input type="radio" id="x1" name="x" />
-            <label htmlFor="x1">Choice 1</label>
-            <input type="radio" id="x2" name="x" />
-            <label htmlFor="x2">Choice 2</label>
-            <input type="radio" id="x3" name="x" />
-            <label htmlFor="x3">Choice 3</label>
+
+          <div className={styles.watering}>
+            <input type="radio" id="daily" name="watering" value="daily" onChange={(e) => inputChangeHandler(e)} />
+            <label htmlFor="daily">Daily</label>
+
+            <input
+              type="radio"
+              id="biweekly"
+              name="watering"
+              value="biweekly"
+              onChange={(e) => inputChangeHandler(e)}
+            />
+            <label htmlFor="biweekly">Bi-Weekly</label>
+
+            <input
+              type="radio"
+              id="fortnightly"
+              name="watering"
+              value="fortnightly"
+              onChange={(e) => inputChangeHandler(e)}
+            />
+            <label htmlFor="fortnightly">Fortnightly</label>
           </div>
         </div>
         <div className={styles.label}>
           <label htmlFor="soilDrainage">Soil drainage</label>
+
           <select
             name="soilDrainage"
             id="soilDrainage"
@@ -118,7 +128,7 @@ const Form = () => {
             <option value="high">High</option>
             <option value="low">Low</option>
           </select>
-        </div>
+        </div>{' '}
         <input className={styles.button} type="submit" value="Add Plant" />
       </div>
     </form>
