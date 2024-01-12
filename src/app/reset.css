@@ -127,30 +127,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-.list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  box-sizing: border-box;
-}
-
-@media only screen and (min-width: 600px) {
-  .list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .list {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}

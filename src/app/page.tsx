@@ -22,7 +22,7 @@ export default async function Home() {
     <div>
       <Hero />
 
-      <h4>My Plants</h4>
+      {/* <h4>My Plants</h4>
       <div className={styles.list}>
         {data.map((plant: Plant) => {
           return (
@@ -36,7 +36,7 @@ export default async function Home() {
             />
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 }
