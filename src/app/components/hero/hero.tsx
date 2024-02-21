@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import styles from './hero.styles.module.css';
+import styles from './hero.module.css';
 import Link from 'next/link';
 import localFont from 'next/font/local';
 

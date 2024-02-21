@@ -2,7 +2,7 @@ import { faImage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import styles from './dropzone.styles.module.css';
+import styles from './dropzone.module.css';
 import Image from 'next/image';
 
 export const Dropzone = () => {

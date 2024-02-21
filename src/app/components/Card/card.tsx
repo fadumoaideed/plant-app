@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Plant } from '../../../../Types/plant';
-import styles from './card.styles.module.css';
+import styles from './card.module.css';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export function card({ name, image }: Plant) {

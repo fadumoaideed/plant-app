@@ -1,6 +1,6 @@
-import styles from './homepage.styles.module.css';
+import styles from './homepage.module.css';
 import { Plant } from '../../Types/plant';
-import Card from './components/card/card';
+// import Card from './components/card/card';
 import Link from 'next/link';
 import Hero from './components/hero/hero';
 
