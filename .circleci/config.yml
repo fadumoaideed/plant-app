@@ -1,0 +1,45 @@
+version: 2.1
+
+jobs:
+  lint:
+    docker:
+      - image: circleci/node:14
+
+    steps:
+      - checkout
+
+      # Install dependencies
+      - run:
+          name: Install Dependencies
+          command: npm install
+
+      # Run linting
+      - run:
+          name: Run Lint
+          command: npm run lint
+
+  build:
+    docker:
+      - image: circleci/node:14
+
+    steps:
+      - checkout
+
+      # Install dependencies
+      - run:
+          name: Install Dependencies
+          command: npm install
+
+      # Build the Next.js application
+      - run:
+          name: Build Next.js App
+          command: npm run build
+
+workflows:
+  version: 2
+  lint_and_build:
+    jobs:
+      - lint
+      - build:
+          requires:
+            - lint
