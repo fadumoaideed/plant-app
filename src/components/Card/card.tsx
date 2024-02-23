@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import { Plant } from '../../../../Types/plant';
+import { Plant } from '../../../Types/plant';
 import styles from './card.module.css';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-export function card({ name, image }: Plant) {
+export function Card({ name, image }: Plant) {
   return (
     <div className={styles.card}>
       <img className={styles.img} src={image} alt="alt" />
@@ -19,4 +19,4 @@ export function card({ name, image }: Plant) {
 //   return <FontAwesomeIcon icon={faSun} color="#909192" height={'30px'} />;
 // }
 
-export default card;
+export default Card;

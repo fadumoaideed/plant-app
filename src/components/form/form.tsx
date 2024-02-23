@@ -1,7 +1,7 @@
 'use client'; // THis is a client side component
 import styles from './form1.module.css';
 import React, { useState } from 'react';
-import { Plant } from '../../../../Types/plant';
+import { Plant } from '../../../Types/plant';
 import axios from 'axios';
 // import { Dropzone } from '../dropzone/dropzone';
 import { useRouter } from 'next/navigation';

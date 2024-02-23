@@ -1,14 +1,14 @@
 import styles from './homepage.module.css';
-import { Plant } from '../../Types/plant';
-// import Card from './components/card/card';
-import Link from 'next/link';
-import Hero from './components/hero/hero';
+// import { Plant } from '../../Types/plant';
+import Hero from '../components/Hero/Hero';
+// import Card from '../components/Card/card';
+import jsonData from '../api/db.json';
 
 async function getData() {
   const res = await fetch('http://localhost:3001/plants');
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    return jsonData;
   }
 
   return res.json();
@@ -17,14 +17,13 @@ async function getData() {
 export default async function Home() {
   const data = await getData();
 
-  console.log('data', data);
   return (
     <div>
       <Hero />
 
-      {/* <h4>My Plants</h4>
+      {/* <h4>My Plants</h4> */}
       <div className={styles.list}>
-        {data.map((plant: Plant) => {
+        {/* {data.map((plant: Plant) => {
           return (
             <Card
               key={plant.id}
@@ -35,8 +34,8 @@ export default async function Home() {
               soilDrainage={plant.soilDrainage}
             />
           );
-        })}
-      </div> */}
+        })} */}
+      </div>
     </div>
   );
 }

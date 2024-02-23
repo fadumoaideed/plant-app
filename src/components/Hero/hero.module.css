@@ -1,21 +1,53 @@
-.hero {
+
+@media (max-width: 360px) {
+.hero{
+  height: 700px;
+  width: 100%;
+  margin: 0 50px 0 50px;
+  background-color: #F5F4EF
+;}
+
+.hero_image{
+  height: 500px;
+}
+
+}
+@media (max-width: 480px) {
+  /* … */
+}
+@media (max-width: 600px) {
+  /* … */
+}
+@media (max-width: 834px) {
+  /* … */
+}
+@media (max-width: 960px) {
+  /* … */
+}
+@media (max-width: 960px) {
+  /* … */
+}
+@media (max-width: 1280px) {
+  /* … */
+}
+
+
+
+
+/* .hero {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
 .heroImage {
-  /* position: absolute; */
   width: 100vw;
-  /* height: 700px; */
   top: -50px;
   object-fit: cover;
-  /* outline: 1px solid black; */
 }
 
 #heroHeading {
   position: absolute;
-  /* top: calc(800px - 300px); */
   top: 75px;
   margin-left: 8px;
   font-size: 70px;
@@ -66,4 +98,4 @@
 
 .button:hover {
   background-color: rgb(6, 112, 85);
-}
+} */

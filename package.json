@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "server": "json-server --watch src/api/data.json --port 3001",
+    "server": "json-server --watch src/api/db.json --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "init": "npm run dev & npm run server"
+    "lint": "next lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

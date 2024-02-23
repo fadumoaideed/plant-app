@@ -10,12 +10,7 @@
       "lighting": "DIRECT",
       "maxheight": "10m",
       "soilType": "HIGH",
-      "tags": [
-        "Senecio Rowleyanus",
-        "String of Pearls",
-        "String of Beads",
-        "Chain of Pearls"
-      ]
+      "tags": ["Senecio Rowleyanus", "String of Pearls", "String of Beads", "Chain of Pearls"]
     },
     {
       "id": 2,
@@ -46,12 +41,7 @@
       "lighting": "DIRECT",
       "maxheight": "12m",
       "soilType": "HIGH",
-      "tags": [
-        "Fern",
-        "Nephrolepis Exaltata",
-        "Boston Fern",
-        "Sword Fern"
-      ]
+      "tags": ["Fern", "Nephrolepis Exaltata", "Boston Fern", "Sword Fern"]
     },
     {
       "id": 4,
@@ -72,14 +62,6 @@
         "Golden Cane",
         ""
       ]
-    },
-    {
-      "name": "afeaf",
-      "scientificName": "adfsaf",
-      "image": "helloo",
-      "watering": "biweekly",
-      "soilDrainage": "high",
-      "id": 5
     }
   ]
 }
