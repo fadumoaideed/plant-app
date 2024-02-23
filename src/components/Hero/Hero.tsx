@@ -10,13 +10,13 @@ const myFont = localFont({ src: '../../fonts/Berkshire_Swash/BerkshireSwash-Regu
 function Hero() {
   return (
     <div className={styles.hero}>
-      <h2 id={styles['heroHeading']} className={myFont.className}>
+      <h2 id={styles['hero_headline']} className={myFont.className}>
         Botanify
       </h2>
-      <img className={styles.hero_image} src="images/heroImage2.png" alt="placeholder" />
+      {/* <img className={styles.hero_image} src="images/heroImage2.png" alt="placeholder" /> */}
 
-      <div className={styles.hero_text}>
-        <h4 className={styles.headline}>
+      <div>
+        <h4 className={styles.hero_subheadline}>
           The<span className={styles.span}> easiest</span> way to keep plants
           <span className={styles.span}> alive</span>
         </h4>

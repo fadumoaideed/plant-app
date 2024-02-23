@@ -1,16 +1,26 @@
-
 @media (max-width: 360px) {
-.hero{
-  height: 700px;
-  width: 100%;
-  margin: 0 50px 0 50px;
-  background-color: #F5F4EF
-;}
+  .hero {
+    height: 700px;
+    width: 360px;
+    margin: 0 10px 0 10px;
+    background-image: url('../../../public/images/plant-in-pot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.hero_image{
-  height: 500px;
-}
+  .hero_image {
+    width: 100vw;
+    height: 500px;
+    z-index: -1;
+  }
 
+  #hero_headline {
+    font-size: 5rem;
+  }
+
+  .hero_subheadline {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 480px) {
   /* … */
@@ -30,9 +40,6 @@
 @media (max-width: 1280px) {
   /* … */
 }
-
-
-
 
 /* .hero {
   display: flex;
