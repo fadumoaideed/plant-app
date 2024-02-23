@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   lint:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:18
 
     steps:
       - checkout
@@ -16,7 +16,7 @@ jobs:
 
   build:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:18
 
     steps:
       - checkout
