@@ -3,17 +3,7 @@ import styles from './homepage.module.css';
 import Hero from '../components/Hero/Hero';
 // import Card from '../components/Card/card';
 import jsonData from '../api/db.json';
-
-async function getData() {
-  const res = await fetch('http://localhost:3001/plants');
-
-  if (!res.ok) {
-    return jsonData;
-  }
-
-  return res.json();
-}
-
+import { getData } from '../api/api';
 export default async function Home() {
   const data = await getData();
 
