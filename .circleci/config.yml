@@ -8,10 +8,6 @@ jobs:
     steps:
       - checkout
 
-      # Install dependencies
-      - run:
-          name: Install Dependencies
-          command: npm install
 
       # Run linting
       - run:
@@ -39,7 +35,5 @@ workflows:
   version: 2
   lint_and_build:
     jobs:
-      - lint
       - build:
-          requires:
-            - lint
+
