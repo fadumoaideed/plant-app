@@ -2,7 +2,7 @@
   .hero {
     height: 700px;
     width: 360px;
-    margin: 0 10px 0 10px;
+    margin: 0;
     background-image: url('../../../public/images/plant-in-pot.png');
     background-repeat: no-repeat;
     background-size: cover;
