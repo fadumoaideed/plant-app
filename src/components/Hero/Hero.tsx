@@ -6,28 +6,28 @@ import localFont from 'next/font/local';
 
 const myFont = localFont({ src: '../../fonts/Berkshire_Swash/BerkshireSwash-Regular.ttf' });
 
-// Animation of plant being watered and growing
+// MLP: video of plant https://stock.adobe.com/uk/search/video?filters%5Bcontent_type%3Avideo%5D=1&k=monstera&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=monstera&get_facets=0&asset_id=561158807
 function Hero() {
   return (
     <div className={styles.hero}>
-      <h2 id={styles['hero_headline']} className={myFont.className}>
-        Botanify
-      </h2>
-      {/* <img className={styles.hero_image} src="images/heroImage2.png" alt="placeholder" /> */}
-
-      <div>
+      <div className={styles.hero_text}>
+        <h2 id={styles['hero_headline']} className={myFont.className}>
+          Botanify
+        </h2>
         <h4 className={styles.hero_subheadline}>
           The<span className={styles.span}> easiest</span> way to keep plants
           <span className={styles.span}> alive</span>
         </h4>
-        {/* <div className={styles.pinkShadow}></div> */}
-
-        <Link className={styles.button} href="/add-plant">
-          Get planting
-        </Link>
-
-        {/* //TODO? Make more semantically correct and use button instead of link */}
       </div>
+      <Link href="/add-plant" className={styles.link}>
+        <button className={styles.button} type="button">
+          Get planting
+        </button>
+      </Link>
+      <img className={styles.hero_image} src="images/hero-plant-green-bg.png" alt="placeholder" />
+
+      {/* <div className={styles.pinkShadow}></div> */}
+
       {/* <svg className={styles.svg1} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path
           fill="rgb(226, 232, 229, 0.5)"

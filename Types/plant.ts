@@ -21,10 +21,10 @@ export interface Plant {
   name: string | undefined;
   scientificName: string | undefined;
   watering: Watering | undefined;
-  lastWaterered?: string | undefined;
+  lastWaterered?: Date | undefined;
   image: string;
   sunlight?: LightLevel | undefined;
   maxheight?: string | undefined;
   soilDrainage: Drainage | undefined;
-  tags?: Array<string | undefined>;
+  tags?: Record<string, string> | undefined;
 }

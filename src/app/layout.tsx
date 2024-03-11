@@ -1,5 +1,5 @@
 import { Roboto, Poppins } from 'next/font/google';
-import './reset.css';
+import './global-styles/reset.css';
 const inter = Poppins({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {

@@ -1,26 +1,130 @@
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .hero {
-    height: 700px;
-    width: 360px;
-    margin: 0;
-    background-image: url('../../../public/images/plant-in-pot.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
+    height: 800px;
+    width: 100%;
   }
 
   .hero_image {
-    width: 100vw;
-    height: 500px;
-    z-index: -1;
+    position: absolute;
+    height: 600px;
+    width: 415px;
   }
 
   #hero_headline {
+    position: absolute;
+    font-size: 5rem;
+    top: 70px;
+    left: 10px;
+    z-index: 2;
+
+    /* writing-mode: tb-rl;
+    text-orientation: mixed; */
+  }
+
+  .hero_subheadline {
+    position: absolute;
+    font-size: 2rem;
+    top: 200px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  .button {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 150px;
+    border-radius: 50px;
+    background: rgb(0, 169, 128);
+    padding: 10px 25px;
+    color: white;
+    align-items: center;
+    border: none;
+    z-index:2;
+  }
+  .link {
+    text-decoration: none;
+  }
+
+  /* .hero {
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  #hero_headline {
+
     font-size: 5rem;
   }
 
   .hero_subheadline {
     font-size: 2rem;
+  } */
+}
+
+@media (max-width: 480px) {
+  .hero {
+    position: absolute;
+    height: 800px;
+    width: 100%;
   }
+
+  .hero_image {
+    position: absolute;
+    height: 600px;
+    width: 415px;
+  }
+
+  #hero_headline {
+    position: absolute;
+    font-size: 5rem;
+    top: 70px;
+    left: 10px;
+    z-index: 2;
+
+    /* writing-mode: tb-rl;
+    text-orientation: mixed; */
+  }
+
+  .hero_subheadline {
+    position: absolute;
+    font-size: 2rem;
+    top: 200px;
+    left: 10px;
+    z-index: 2;
+  }
+
+
+  .button {
+    display: block;
+    position: absolute;
+    width: 150px;
+    border-radius: 50px;
+    background: rgb(0, 169, 128);
+    padding: 10px 25px;
+    color: white;
+    align-items: center;
+    border: none;
+  }
+  .link {
+    text-decoration: none;
+  }
+
+  /* .hero {
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  #hero_headline {
+
+    font-size: 5rem;
+  }
+
+  .hero_subheadline {
+    font-size: 2rem;
+  } */
 }
 
 @media (max-width: 600px) {

@@ -4,13 +4,13 @@ import Hero from '../components/Hero/Hero';
 // import Card from '../components/Card/card';
 import jsonData from '../api/db.json';
 import { getData } from '../api/api';
+const key = process.env.SUPABASE_KEY as string;
 export default async function Home() {
   const data = await getData();
 
   return (
-    <div>
+    <div className={styles.homepage}>
       <Hero />
-
       {/* <h4>My Plants</h4> */}
       <div className={styles.list}>
         {/* {data.map((plant: Plant) => {

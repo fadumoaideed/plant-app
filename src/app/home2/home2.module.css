@@ -1,0 +1,62 @@
+@media (max-width: 480px) {
+  .home2 {
+    position: absolute;
+  }
+
+  #hero_headline {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+    padding: '10px';
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+  }
+
+  .home2 video {
+    width: 100%;
+    height: fit-content;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  .arrow span {
+    position: absolute;
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg) translate(-15px, -15px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(0deg) translate(15px, 15px);
+    }
+  }
+}
