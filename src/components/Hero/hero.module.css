@@ -1,9 +1,3 @@
-#hero_headline {
-  position: absolute;
-  font-size: 4rem;
-  top: 30px;
-  z-index: 2;
-}
 
 @media (max-width: 480px) {
   .hero {
@@ -52,7 +46,7 @@
 
   .arrow {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     transform: rotate(45deg);
     cursor: pointer;
