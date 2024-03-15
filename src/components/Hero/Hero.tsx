@@ -25,8 +25,10 @@ function Hero() {
         </button>
       </Link> */}
       <img className={styles.hero_image} src="images/hero-plant-green-bg.png" alt="placeholder" />
-      <div className={styles.arrow}>
-        <span></span>
+      <div className={styles.go_to}>
+        <div className={styles.arrow}>
+          <span></span>
+        </div>
       </div>
       {/* <div className={styles.pinkShadow}></div> */}
 

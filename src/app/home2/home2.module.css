@@ -43,7 +43,7 @@
     border-bottom: 5px solid white;
     border-right: 5px solid white;
     margin: -10px;
-    animation: animate 2s infinite;
+    animation: animate 3s infinite;
   }
 
   @keyframes animate {
