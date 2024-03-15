@@ -15,17 +15,19 @@ function Hero() {
           Botanify
         </h2>
         <h4 className={styles.hero_subheadline}>
-          The<span className={styles.span}> easiest</span> way to keep plants
-          <span className={styles.span}> alive</span>
+          Your<span className={styles.span}> green</span> oasis
+          <span className={styles.span}> awaits</span>
         </h4>
       </div>
-      <Link href="/add-plant" className={styles.link}>
+      {/* <Link href="/add-plant" className={styles.link}>
         <button className={styles.button} type="button">
-          Get planting
+          Get started
         </button>
-      </Link>
+      </Link> */}
       <img className={styles.hero_image} src="images/hero-plant-green-bg.png" alt="placeholder" />
-
+      <div className={styles.arrow}>
+        <span></span>
+      </div>
       {/* <div className={styles.pinkShadow}></div> */}
 
       {/* <svg className={styles.svg1} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

@@ -1,66 +1,8 @@
-@media (max-width: 360px) {
-  .hero {
-    position: absolute;
-    height: 800px;
-    width: 100%;
-  }
-
-  .hero_image {
-    position: absolute;
-    height: 600px;
-    width: 415px;
-  }
-
-  #hero_headline {
-    position: absolute;
-    font-size: 5rem;
-    top: 70px;
-    left: 10px;
-    z-index: 2;
-
-    /* writing-mode: tb-rl;
-    text-orientation: mixed; */
-  }
-
-  .hero_subheadline {
-    position: absolute;
-    font-size: 2rem;
-    top: 200px;
-    left: 10px;
-    z-index: 2;
-  }
-
-  .button {
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 150px;
-    border-radius: 50px;
-    background: rgb(0, 169, 128);
-    padding: 10px 25px;
-    color: white;
-    align-items: center;
-    border: none;
-    z-index:2;
-  }
-  .link {
-    text-decoration: none;
-  }
-
-  /* .hero {
-    height: auto;
-    width: auto;
-    margin: 0;
-  }
-
-  #hero_headline {
-
-    font-size: 5rem;
-  }
-
-  .hero_subheadline {
-    font-size: 2rem;
-  } */
+#hero_headline {
+  position: absolute;
+  font-size: 4rem;
+  top: 30px;
+  z-index: 2;
 }
 
 @media (max-width: 480px) {
@@ -72,8 +14,9 @@
 
   .hero_image {
     position: absolute;
-    height: 600px;
-    width: 415px;
+    height: auto;
+    width: 100%;
+    right: 0px;
   }
 
   #hero_headline {
@@ -82,19 +25,15 @@
     top: 70px;
     left: 10px;
     z-index: 2;
-
-    /* writing-mode: tb-rl;
-    text-orientation: mixed; */
   }
 
   .hero_subheadline {
     position: absolute;
     font-size: 2rem;
-    top: 200px;
+    bottom: 50px;
     left: 10px;
     z-index: 2;
   }
-
 
   .button {
     display: block;
@@ -111,20 +50,38 @@
     text-decoration: none;
   }
 
-  /* .hero {
-    height: auto;
-    width: auto;
-    margin: 0;
+  .arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
   }
 
-  #hero_headline {
-
-    font-size: 5rem;
+  .arrow span {
+    position: absolute;
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    border-bottom: 5px solid rgb(33, 133, 73);
+    border-right: 5px solid rgb(33, 133, 73);
+    margin: -10px;
+    animation: animate 2s infinite;
   }
 
-  .hero_subheadline {
-    font-size: 2rem;
-  } */
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg) translate(-15px, -15px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(0deg) translate(15px, 15px);
+    }
+  }
 }
 
 @media (max-width: 600px) {
